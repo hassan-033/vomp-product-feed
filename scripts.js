@@ -60,6 +60,8 @@ function initProductFeed() {
   });
 }
 
+initProductFeed();
+
 // Initialize the product view page
 function initProductView() {
   const urlParams = new URLSearchParams(window.location.search);
