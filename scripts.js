@@ -45,6 +45,17 @@ const products = [
   },
 ];
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Call the function to initialize the product feed page
+  initProductFeed();
+
+  // Check if on the product-view page and initialize it
+  if (window.location.pathname.includes("product-view.html")) {
+    initProductView();
+  }
+});
+
+
 // Initialize the product feed page
 function initProductFeed() {
   const productCards = document.querySelectorAll(".product-card");
@@ -59,8 +70,6 @@ function initProductFeed() {
     });
   });
 }
-
-initProductFeed();
 
 // Initialize the product view page
 function initProductView() {
