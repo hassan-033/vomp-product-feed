@@ -78,7 +78,7 @@ function initProductView() {
   const product = products[productIndex];
   const productContainer = document.querySelector(".product-view");
   productContainer.innerHTML = `
-        <img src="${product.image}" alt="${product.name}" class="img-fluid">
+        <img src="${product.image}" alt="${product.name}">
         <div class="product-details">
             <h2>${product.name}</h2>
             <p>${product.description}</p>
