@@ -45,6 +45,7 @@ body {
   position: relative;
   cursor: pointer;
   margin-bottom: 1rem;
+  width: fit-content;
 }
 
 .product-card:hover {
@@ -54,9 +55,15 @@ body {
 }
 
 .product-card img {
-  width: 100%;
+  width: 400px;
   height: auto;
   border-radius: 6px;
+}
+
+img.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .product-info {
