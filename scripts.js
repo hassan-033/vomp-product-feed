@@ -51,7 +51,11 @@ function initProductFeed() {
   productCards.forEach((card, index) => {
     card.addEventListener("click", () => {
       // Navigate to product-view.html with product index as a query parameter
-      window.location.href = `product-view.html?productIndex=${index}`;
+      window.location.href = `./product-view.html?productIndex=${index}`;
+      // Debugging logs
+      const targetUrl = `./product-view.html?productIndex=${index}`;
+      console.log("Redirecting to:", targetUrl);
+      window.location.href = targetUrl;
     });
   });
 }
